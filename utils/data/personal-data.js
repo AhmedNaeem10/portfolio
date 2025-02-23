@@ -1,8 +1,8 @@
 export const personalData = {
     name: "Ahmed Naeem",
-    profile: '/profile.png',
+    profile: '/image/kratos.png',
     designation: "Software Developer",
-    description: "My name is Ahmed Naeem. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
+    description: "Results-driven Software Engineer with in full-stack development. Skilled in backend technologies (C# .NET, NodeJS, NestJS, Java, Python, C/C++), databases (MySQL, SQL Server, Oracle, Postgres, MongoDB), and frontend frameworks (React, React Native, Angular). Experienced with cloud services (AWS, Azure) and project management tools (Azure DevOps, Jira). \n\nPassionate about building scalable solutions, optimizing workflows, and driving innovation.",
     email: 'ahmednaeem.career@gmail.com',
     phone: '+923315371989',
     address: 'Middle Badda, Dhaka, Bangladesh - 1212 ',

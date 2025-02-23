@@ -1,3 +1,4 @@
+"use client";
 // @flow strict
 
 import { personalData } from "@/utils/data/personal-data";
@@ -5,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
-import { MdDownload } from "react-icons/md";
+import { ImNewTab } from "react-icons/im";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 
@@ -79,8 +80,8 @@ function HeroSection() {
 
             <Link className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" role="button" target="_blank" href={personalData.resume}
             >
-              <span>Get Resume</span>
-              <MdDownload size={16} />
+              <span>View Resume</span>
+              <ImNewTab size={16} />
             </Link>
           </div>
 
