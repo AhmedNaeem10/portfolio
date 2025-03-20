@@ -23,7 +23,7 @@ function AboutSection() {
             {personalData.description}
           </p>
         </div>
-        <div className="flex justify-center order-1 lg:order-2">
+        {/* <div className="flex justify-center order-1 lg:order-2">
           <Image
             src={personalData.profile}
             width={280}
@@ -31,7 +31,7 @@ function AboutSection() {
             alt="Ahmed Naeem"
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

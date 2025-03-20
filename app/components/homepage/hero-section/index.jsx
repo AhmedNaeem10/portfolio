@@ -10,6 +10,28 @@ import { ImNewTab } from "react-icons/im";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 
+const skills = [
+  'Javascript',
+  'Typescript',
+  'React',
+  'React Native',
+  'Next JS',
+  'Tailwind',
+  'Bootstrap',
+  'MongoDB',
+  'MySQL',
+  'Git',
+  'AWS',
+  'Azure',
+  'Docker',
+  'Go',
+  '.NET',
+  'Python',
+  'Java',
+  'Firebase',
+  'Nginx'
+];
+
 function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
@@ -114,25 +136,19 @@ function HeroSection() {
               </div>
               <div className="ml-4 lg:ml-8 mr-2">
                 <span className=" text-white">skills:</span>
-                <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">React</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NextJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NestJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Docker</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">AWS</span>
-                <span className="text-gray-400">{"'],"}</span>
+                <span className="text-gray-400">{`[`}</span>
+                {
+                  skills.map((skill, index) => (
+                  <>
+                    <span className="text-amber-300">{`'${skill}'`}</span>
+                    {
+                      (index < skills.length - 1) && 
+                      <span className="text-gray-400">{", "}</span>
+                    }
+                    </>
+                  ))
+                }
+                <span className="text-gray-400">{"],"}</span>
               </div>
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">hardWorker:</span>
